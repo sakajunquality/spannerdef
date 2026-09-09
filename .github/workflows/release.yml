@@ -20,8 +20,7 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v5
       with:
-        go-version: '1.21'
-        check-latest: true
+        go-version-file: go.mod
 
     - name: Run tests
       run: |
@@ -84,7 +83,7 @@ jobs:
           
           Choose the binary for your platform:
           
-          **macOS:**
+          **macOS** (13 Ventura or later):
           - [spannerdef-${{ env.VERSION }}-darwin-arm64](https://github.com/${{ github.repository }}/releases/download/${{ env.VERSION }}/spannerdef-${{ env.VERSION }}-darwin-arm64) (Apple Silicon)
           - [spannerdef-${{ env.VERSION }}-darwin-amd64](https://github.com/${{ github.repository }}/releases/download/${{ env.VERSION }}/spannerdef-${{ env.VERSION }}-darwin-amd64) (Intel)
           

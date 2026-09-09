@@ -21,6 +21,8 @@ Idempotent Google Cloud Spanner schema management by SQL, inspired by [sqldef](h
 go install github.com/hokaccha/spannerdef/cmd/spannerdef@latest
 ```
 
+Release binaries are built with the current Go release; the macOS binaries require macOS 13 or later.
+
 Or install with [mise](https://mise.jdx.dev/):
 
 ```bash
